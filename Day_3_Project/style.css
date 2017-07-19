@@ -18,6 +18,7 @@ line-height: 1.6;
 background-color: #eeeeee;
 }
 
+/* TODO: Adjust header margin */
 header {
 background-color: #ff8523;
 }
@@ -30,6 +31,7 @@ h2, h3 {
 color: #1fabe5;
 }
 
+/* TODO: I am having trouble with the navigation menu*/
 nav, nav:link, nav:visited {
 border-style: solid;
 border-width: 1;
@@ -42,6 +44,15 @@ text-align: justify;
 li {
   font-weight:bolder;
 }
+
+/* TODO: More work needed in table
+    - Top row text color
+    - Adjust cell border to single thin width
+    - Float? the cell text
+    - How do I resize the images...
+    - Make images smaller
+    - Can I add <HR> above and below table?
+*/
 
 table {
   border-style:solid;
@@ -77,6 +88,9 @@ form {
   background-color: #dddddd;
   padding: 5;
 }
+
+/* TODO: Adjust div.name so that the background is larger. */
+/* TODO: Learn and impliment border radius. */
 
 div.name {
   display: inline;
