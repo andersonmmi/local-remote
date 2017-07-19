@@ -1,0 +1,92 @@
+/*
+font info:
+    family - Helvetica, Arial, sans-serif
+    line-height - 1.6
+
+
+colors:
+    light gray - #eeeeee
+    gray - #dddddd
+    yellow - #ffd24a
+    orange - #ff8523
+    blue - #1fabe5
+    dark blue - #046c97
+*/
+body {
+font-family: Helvetica, Arial, sans-serif;
+line-height: 1.6;
+background-color: #eeeeee;
+}
+
+header {
+background-color: #ff8523;
+}
+
+/*nav {
+color: #eeeeee;
+}*/
+
+h2, h3 {
+color: #1fabe5;
+}
+
+nav, nav:link, nav:visited {
+border-style: solid;
+border-width: 1;
+margin: 5 1 10 1;
+border-color: #eeeeee;
+padding; 5 5 5 5;
+text-align: justify;
+}
+
+li {
+  font-weight:bolder;
+}
+
+table {
+  border-style:solid;
+  border-width: 1;
+  border-color: #046c97;
+  border-spacing: 1;
+  table-layout:auto;
+}
+
+img[src] {
+  padding: 5;
+  margin: 5;
+  border: 5;
+}
+
+td {
+  border-style: solid;
+  border-width: 1;
+  border-color:#046c97;
+  padding: 5;
+  margin: -1;
+}
+
+thead>tr>td {
+  background-color: #1fabe5;
+  text-emphasis-color: #eeeeee;
+  text-align:left;
+}
+
+form {
+  border-style: none;
+  border-radius: 100;
+  background-color: #dddddd;
+  padding: 5;
+}
+
+div.name {
+  display: inline;
+  background-color: #ff8523;
+  padding: 15;
+  color: #eeeeee;
+  font-size: 3;
+}
+
+#submit_button {
+  color:#eeeeee;
+  background-color:#1fabe5;
+}
