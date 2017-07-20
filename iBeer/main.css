@@ -34,6 +34,7 @@ img{
         - Center up the page
         - Create a flexbox containerer for
         the major page sections
+        *DONE*
     */
     display: flex;
     flex-direction: column;
@@ -51,10 +52,6 @@ img{
     margin: 0% 2% 0% 2%;
     /* Attempting to apply behavior to child elements */
     align-content: flex-end;
-}
-#site-header:first-child {
-    /* Attempting to apply behavior to child elements */
-    align-content: flex-start;
 }
 #site-header div{
     text-align: center;
@@ -87,7 +84,9 @@ img{
     /*
         TODO:
         - Use the script font: 'Dancing Script' fot this text
+        *DONE*
     */
+    font-family: 'Dancing Script';
 }
 #main-navigation{
     background: #444;
@@ -95,7 +94,10 @@ img{
     /*
         TODO:
         - Use Flexbox to arrange the navigation links
+        *DONE*
     */
+    display: flex;
+    flex-direction: row;
 }
 #main-navigation a{
     display: block;
@@ -108,15 +110,19 @@ img{
         TODO:
         - Flexbox - Create general spacing between nav links
     */
+    justify-content: space-around;
+    flex-shrink: 5;
 }
 #main-navigation #logo{
-    margin-right: 400px;
+    /* Changed margin from margin right 400px to margin-left 3% */
+    margin-left: 3%;
 
     /*
         TODO:
         - Flexbox - The logo needs to take up more space
         that the other links
     */
+    flex-grow: 1;
 }
 .blog{
     /*This is my wrapper for main and asside*/
@@ -211,7 +217,15 @@ article footer p{
         TODO:
         - Style the article footer
         HINT: Look to the article header;
+        *DONE*
     */
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
 }
 #site-footer{
 
@@ -219,5 +233,14 @@ article footer p{
     /*
         TODO:
         - Style the site footer
+        *DONE*
     */
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    color: #ffffff;
 }
