@@ -16,6 +16,7 @@ body {
 font-family: Helvetica, Arial, sans-serif;
 line-height: 1.6;
 background-color: #eeeeee;
+margin: 0 auto;
 }
 
 header {
@@ -23,7 +24,11 @@ height: 6em;
 background-color: #ff8523;
 border: 1em solid #ff8523;
 display: block;
-margin: 0 auto;
+/*margin: 0 auto;*/
+}
+
+section {
+  margin-left: 1.5em;
 }
 
 #logo {
@@ -79,6 +84,11 @@ td {
   border-color:#046c97;
   padding: 0.5em;
   margin: -1;
+}
+
+td>img {
+  max-width: 8em;
+  max-height: 8em;
 }
 
 thead>tr>td {
