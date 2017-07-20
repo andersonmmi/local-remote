@@ -94,10 +94,11 @@ img{
     /*
         TODO:
         - Use Flexbox to arrange the navigation links
-        *DONE*
+        *DONE* Shrink aint workin
     */
     display: flex;
     flex-direction: row;
+    flex-basis: 1;
 }
 #main-navigation a{
     display: block;
@@ -109,9 +110,10 @@ img{
     /*
         TODO:
         - Flexbox - Create general spacing between nav links
+        *DONE* Shrink aint workin
     */
     justify-content: space-around;
-    flex-shrink: 5;
+    flex-shrink: 1;
 }
 #main-navigation #logo{
     /* Changed margin from margin right 400px to margin-left 3% */
@@ -119,9 +121,10 @@ img{
 
     /*
         TODO:
-        - Flexbox - The logo needs to take up more space
-        that the other links
+        - Flexbox - The logo needs to take up more space than the other links
+        *NOT DONE*
     */
+    flex-shrink: 0;
     flex-grow: 1;
 }
 .blog{
@@ -175,10 +178,11 @@ aside h3{
     border-bottom: 1px solid #ccc;
 }
 aside img{
-    max-width:100%;
     border-radius: 50%;
     margin-bottom: 30px;
     border: 2px solid white;
+    display: block;
+    width: 25em;
 }
 article{
     background-color: white;
