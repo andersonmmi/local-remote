@@ -52,12 +52,10 @@ img{
     /* Attempting to apply behavior to child elements */
     align-content: flex-end;
 }
-
 #site-header:first-child {
     /* Attempting to apply behavior to child elements */
     align-content: flex-start;
 }
-
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
@@ -67,6 +65,7 @@ img{
         TODO:
         - Add a background image "header-img.jpg"
         make sure that the path to the image is correct
+        *DONE*
     */
     background-image: url("img/header-img.jpg");
     background-size: cover;
@@ -119,6 +118,12 @@ img{
         that the other links
     */
 }
+.blog{
+    /*This is my wrapper for main and asside*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 main{
     padding: 20px;
     background-color: #444;
@@ -136,7 +141,6 @@ main{
     justify-content: space-around;
     align-content: center;
     position: relative;
-    left: 8%;
     top: -35px;
 }
 aside{
@@ -146,15 +150,17 @@ aside{
     /*
         TODO:
         - Flexbox: Set the starting width of this element
+        *DONE* width: 20%
         - Use relative positioning to bump this upward
+        *DONE* top: -35px
     */
     width: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-content: center;
     position: relative;
-    right: 8%;
+    top: -35px;
 }
 aside h3{
     text-align: center;
@@ -163,6 +169,7 @@ aside h3{
     border-bottom: 1px solid #ccc;
 }
 aside img{
+    max-width:100%;
     border-radius: 50%;
     margin-bottom: 30px;
     border: 2px solid white;
@@ -194,7 +201,10 @@ article img{
         TODO:
         - Float article images to the right
         and match sizes and spacing to the mockup
+        *DONE*
     */
+    float: right;
+    max-width: 60%;
 }
 article footer p{
     /*
