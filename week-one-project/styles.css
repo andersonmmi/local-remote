@@ -1,0 +1,92 @@
+/*
+Background #f2f1e8
+Text #131511
+Inline Link #968772
+Inline Link Hover #967343
+Navigation Background #ffffff
+Navigation Text #2b2f26
+Navigation Text Hover #cd5d67
+Navigation Text Active #968772
+Button Background #968772
+Button Background Hover #967343
+Button Text #f2f1e8
+Button Text Hover #ffffff
+Input Border Bottom #968772
+Input Border Bottom Focus #967343
+*/
+
+* {
+  font-family: 'Merriweather', serif, 'Roboto', sans-serif;
+}
+
+.wrapper {
+  background-color: #f2f1eb;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  color: #131511;
+}
+
+.nav_header {
+  display: flex;
+  background-color: #ffffff;
+  height: 10%;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+}
+
+a {
+  color: #2b2f26;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.nav_header img {
+  /*height: 400px;*/
+}
+
+.home_content {
+  font-size: 300%;
+
+}
+
+.main_content {
+  font-size: 300%;
+
+}
+
+#company_name {
+  color: blue;
+}
+
+#company_motto {
+  color: green;
+}
+
+.product_display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product_display div {
+  flex-direction: row;
+  max-width: 20%;
+}
+
+footer {
+  diplay: flex;
+  background-color: pink;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  justify-content: center;
+  align-content: center;
+}
+
+footer>p {
+  justify-content: center;
+  align-content: center;
+}
