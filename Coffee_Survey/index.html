@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Coffee Survey</title>
+    </head>
+    <body>
+        <h1>Coffee Survey</h1>
+
+        <form action="http://foo.com" method="POST">
+        <fieldset>
+          <Legend>Personal Information</Legend>
+
+              <label for="full_name">Full Name _(required)_</label>
+              <input type="text" name="full_name" id="full_name" />
+                <br />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+                <br />
+              <label for="phone_number">Phone Number</label>
+              <input type="tel" name="phone_number" id="phone_number" />
+
+        </fieldset>
+        <fieldset>
+          <Legend>Coffee Preferences</Legend>
+
+          <p>**Which style of coffee do you prefer? _(Choose 1 option)_**</p>
+
+                <input type="radio" name="coffee_style" id="coffee_style_1" value="Espresso" />
+                <label for="Espresso">Espresso</label>
+                    <br />
+                <input type="radio" name="coffee_style" id="coffee_style_2" value="Americano" />
+                <label for="Americano">Americano</label>
+                    <br />
+                <input type="radio" name="coffee_style" id="coffee_style_3" value="Cappuccino" />
+                <label for="Cappuccino">Cappuccino</label>
+                    <br />
+                <input type="radio" name="coffee_style" id="coffee_style_4" value="Other" />
+                <label for="Other">Other</label>
+
+        <br />
+          <p>**Do you add anything to your coffee? _(Check all that apply)_**</p>
+
+            <label for="condiments_1">Sugar:</label>
+              <input type="checkbox" name="condiments" id="condiments_1" value="Sugar" />
+            <br />
+
+            <label for="condiments_2">Artificial Sweetener:</label>
+              <input type="checkbox" name="condiments" id="condiments_2" value="Artificial Sweetener" />
+            <br />
+
+            <label for="condiments_3">Cream:</label>
+              <input type="checkbox" name="condiments" id="condiments_3" value="Cream" />
+            <br />
+
+            <label for="condiments_4">Milk:</label>
+              <input type="checkbox" name="condiments" id="condiments_4" value="Milk" />
+            <br />
+
+            <label for="condiments_5">Butter:</label>
+              <input type="checkbox" name="condiments" id="condiments_5" value="Butter" />
+            <br />
+
+            <label for="condiments_6">Water:</label>
+              <input type="checkbox" name="condiments" id="condiments_6" value="Water" />
+        <br />
+        <br />
+
+            <label for="size">**What size do you normally order? _(Choose 1 option)_**</label>
+                <select name="size" id="size">
+                  <option value="small">Small _(default)_</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+        <br />
+        <br />
+
+            <label for="quantity">**How many cups of coffee do you drink per day, on average? _(Choose 1 option)_**</label>
+                <select name="quantity" id="quantity">
+                  <option value="0_1">Between 0-1 cups _(default)_</option>
+                  <option value="2_3">Between 2-3 cups</option>
+                  <option value="4_+">More than 3 cups</option>
+                </select>
+        <br />
+        <br />
+          <label for="memory">**What is your fondest memory related to coffee?**</label>
+            <br />
+            <textarea name="memory" id="memory" cols="100" rows="10">Coffee is like the best thing evar!!!</textarea>
+            <br />
+        <button>Submit</button>
+        </fieldset>
+        </form>
+    </body>
+</html>
