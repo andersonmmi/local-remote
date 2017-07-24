@@ -1,0 +1,97 @@
+/*
+    NAV ELEMENT BACKGROUND : orange
+    NAV ELEMENT HOVER      : red
+
+    BREAKPOINTS
+
+    tablet  : 600px
+    desktop : 900px
+*/
+
+/*** Desktop Styles ****************************/
+body{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+h1 {
+  margin: 5% auto;
+}
+
+a {
+  display: inline;
+  background-color: orange;
+  border-radius: 5px;
+  padding: 10% 32% 10% 32%;
+}
+
+a:hover {
+  color: red;
+}
+
+.left {
+  float: left;
+  width: 25%;
+  padding: 0%;
+}
+
+.right {
+  float: right;
+  width: 25%;
+  padding: 0%;
+}
+
+
+
+/**** Tablet Styles ***********************************/
+
+@media (max-width: 900px) {
+
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: 10%;
+  }
+
+  .left{
+    float: left;
+    display: block;
+    width: 39%;
+    margin: 1% 1% 1% 1%;
+  }
+
+  .right{
+    float: right;
+    display: block;
+    width: 39%;
+    margin: 1% 10% 1% 1%;
+  }
+
+  body {
+    justify-content: center;
+  }
+
+}
+
+
+/**** Mobile Styles ***********************************/
+
+@media (max-width: 600px) {
+
+  a {
+    display: block;
+  }
+
+  .left {
+    float: none;
+    display: block;
+    width: 81%;
+  }
+
+  .right {
+    float: none;
+    display: block;
+    width: 81%;
+  }
+
+}
