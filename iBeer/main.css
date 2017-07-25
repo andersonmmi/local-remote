@@ -181,8 +181,9 @@ aside img{
     border-radius: 50%;
     margin-bottom: 30px;
     border: 2px solid white;
-    display: block;
-    width: 25em;
+    /*display: block;*/
+    /*width: 25em;*/
+    /*width: 100%;*/
 }
 article{
     background-color: white;

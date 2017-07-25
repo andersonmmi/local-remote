@@ -57,6 +57,7 @@ header{
     flex-direction:column;
 }
 #logo{
+    border: 2px solid red;
     justify-content: flex-start;
     width: 30%;
 }
@@ -137,10 +138,14 @@ header{
 /* vvv Mobile view responses below vvv */
 @media (max-width: 600px) {
     header{
+        border: 2px solid green;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: space-around;
+    }
+    #logo h1{
+        text-align: center;
     }
     #main_nav{
         text-align:center;
@@ -156,8 +161,9 @@ header{
         margin-right: 2%;
     }
     #logo{
-        justify-content: center;
-        align-content: space-around;
+        /*justify-content: center;
+        align-content: space-around;*/
+        text-align:center;
         /*margin-left: 15% auto;*/
     }
     #page_title_content{

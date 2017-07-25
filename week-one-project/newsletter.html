@@ -10,20 +10,40 @@
   </head>
   <body class="wrapper">
     <header class="nav_header">
-      <img src="images/bent-creek-logo.png" alt="Bent Creek Logo" />
+      <img src="images/bent-creek-logo.png" alt="Bent Creek Logo">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="newsletter.html">Newsletter</a>
     </header>
     <div class="newsletter_content">
       <section class="opt_in_form">
-        <form>
-
+        <form "./process_form_data.php" method="post">
+          <label for="nameInput">First Name:</label>
+          <input type="text" name="nameInput" id="nameInput">
+          <label for="emailInput">Email:</label>
+          <input type="email" name="emailInput" id="emailInput">
+          <button type="submit" id="signupButton">Submit</button>
         </form>
       </section>
     </div>
     <footer>
       <p>Copyright 2017, Bent Creek Ceramics</p>
     </footer>
+      <script type="text/javascript">
+        var nameInput = document.getElementById('nameInput');
+        var emailInput = document.getElementById('emailInput');
+        var signupButton = document.getElementById('signupButton');
+        signupButton.addEventListener('click', function(e) {
+          var nameVal = nameInput.value;
+          var emailVal = emailInput.value;
+          if (nameVal && emailVal) {
+            alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+            nameInput.value = "";
+            emailInput.value = "";
+          } else {
+            alert('We would love for you to sign up, please provide both your name and email address.');
+          }
+        });
+</script>
   </body>
 </html>
