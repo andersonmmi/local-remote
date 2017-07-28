@@ -17,13 +17,19 @@
         <a href="newsletter.html">Newsletter</a>
       </div>
     </header>
-    <div class="content">
+    <div class="content newsletter">
       <section class="opt_in_form">
-        <form "./process_form_data.php" method="post">
-          <label for="nameInput">First Name:</label>
-          <input type="text" name="nameInput" id="nameInput">
-          <label for="emailInput">Email:</label>
-          <input type="email" name="emailInput" id="emailInput">
+        <h1>Sign Up for Our Weekly Newsletter</h1>
+        <h3>Stay up to date with events, activities, news and specials.</h3>
+        <form "process_form_data.php" method="post">
+          <div class="name_line">
+            <label for="nameInput">First Name:</label>
+            <input type="text" name="nameInput" id="nameInput">
+          </div>
+          <div class="email_line">
+            <label for="emailInput">Email:</label>
+            <input type="email" name="emailInput" id="emailInput">
+          </div>
           <button type="submit" id="signupButton">Submit</button>
         </form>
       </section>
